@@ -133,14 +133,65 @@
         </ul>
       </div>
 
-      <button class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle menu">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <button class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="hamburger" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <!-- Stylized Guitar (drawn first, so it's in back) -->
+          <g class="guitar-icon">
+            <!-- Neck -->
+            <rect x="11.25" y="2" width="1.5" height="9" fill="currentColor" rx="0.75" />
+
+            <!-- Details that fade in after morph -->
+            <g class="guitar-details">
+              <!-- Frets -->
+              <line x1="10.5" y1="4" x2="13.5" y2="4" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+              <line x1="10.5" y1="6.5" x2="13.5" y2="6.5" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+              <line x1="10.5" y1="9" x2="13.5" y2="9" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+            </g>
+
+            <!-- Headstock -->
+            <path d="M10.5 2 L10.5 0.5 L13.5 0.5 L13.5 2" stroke="currentColor" stroke-width="1.5" fill="none"
+              stroke-linejoin="round" />
+
+            <g class="guitar-details">
+              <!-- Tuning pegs -->
+              <circle cx="10.5" cy="1.2" r="0.6" fill="currentColor" />
+              <circle cx="13.5" cy="1.2" r="0.6" fill="currentColor" />
+            </g>
+
+            <!-- Body -->
+            <ellipse cx="12" cy="13" rx="4.5" ry="3.5" fill="currentColor" opacity="0.9" />
+            <ellipse cx="12" cy="18" rx="5.5" ry="4.5" fill="currentColor" />
+
+            <!-- Sound hole -->
+            <circle cx="12" cy="17" r="1.8" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.3" />
+
+            <!-- Bridge -->
+            <rect x="10" y="21" width="4" height="1" fill="currentColor" rx="0.5" />
+
+            <g class="guitar-details">
+              <!-- Strings -->
+              <line x1="10.5" y1="2" x2="10.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+              <line x1="11.5" y1="2" x2="11.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+              <line x1="12.5" y1="2" x2="12.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+              <line x1="13.5" y1="2" x2="13.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+            </g>
+          </g>
+
+          <!-- Hamburger lines (drawn last, so they're on top) -->
+          <path class="ham-line ham-top" d="M4 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path class="ham-line ham-middle" d="M4 12h16" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" />
+          <path class="ham-line ham-bottom" d="M4 18h16" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" />
         </svg>
       </button>
     </div>
 
-    <div id="mobile-menu" class="mobile-menu-dropdown hidden">
+    <!-- Backdrop -->
+    <div id="menu-backdrop" class="menu-backdrop"></div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="mobile-menu-dropdown">
       <div class="mobile-menu-links">
         <a href="index.html#home" class="mobile-link">Home</a>
         <a href="index.html#services" class="mobile-link">Services</a>
