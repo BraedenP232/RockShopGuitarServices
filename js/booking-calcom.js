@@ -38,8 +38,8 @@ const additionalServices = {
 
 // Configuration storage
 let calcomConfig = {
-  apiKey: localStorage.getItem("calcom_api_key") || "",
-  eventTypeId: localStorage.getItem("calcom_event_id") || "",
+  apiKey: "cal_live_9ff03291356099a6a619a1d3b6c13bfc",
+  eventTypeId: "4279055"
 };
 
 // Cache DOM elements
@@ -75,59 +75,6 @@ const elements = {
   bookingError: document.getElementById("booking-error"),
   bookingErrorText: document.getElementById("booking-error-text"),
 };
-
-// Configuration functions
-function saveConfig() {
-  const apiKey = document.getElementById("calcom-api-key").value.trim();
-  const eventId = document.getElementById("calcom-event-id").value.trim();
-
-  if (!apiKey || !eventId) {
-    showConfigError("Please fill in both API Key and Event Type ID");
-    return;
-  }
-
-  if (!apiKey.startsWith("cal_")) {
-    showConfigError('API Key should start with "cal_"');
-    return;
-  }
-
-  // Save to localStorage
-  localStorage.setItem("calcom_api_key", apiKey);
-  localStorage.setItem("calcom_event_id", eventId);
-
-  calcomConfig.apiKey = apiKey;
-  calcomConfig.eventTypeId = eventId;
-
-  // Hide setup, show booking form
-  elements.setupSection.style.display = "none";
-  elements.bookingFormContainer.classList.add("active");
-
-  alert(
-    "✅ Configuration saved! Your booking form is now ready to accept appointments."
-  );
-}
-
-function showConfigError(message) {
-  const errorDiv = document.getElementById("config-error");
-  const errorText = document.getElementById("config-error-text");
-  errorText.textContent = message;
-  errorDiv.classList.add("show");
-
-  setTimeout(() => {
-    errorDiv.classList.remove("show");
-  }, 5000);
-}
-
-// Check if already configured on page load
-function checkConfiguration() {
-  if (calcomConfig.apiKey && calcomConfig.eventTypeId) {
-    elements.setupSection.style.display = "none";
-    elements.bookingFormContainer.classList.add("active");
-  } else {
-    elements.setupSection.style.display = "block";
-    elements.bookingFormContainer.classList.remove("active");
-  }
-}
 
 // Phone number formatting
 elements.phoneInput.addEventListener("input", (e) => {
@@ -592,7 +539,9 @@ elements.bookingForm.addEventListener("submit", async (e) => {
 });
 
 // Initialize
-checkConfiguration();
+// checkConfiguration();
+elements.setupSection.style.display = "none";
+elements.bookingFormContainer.classList.add("active");
 elements.instrumentDetailsSection.style.display = "none";
 elements.serviceSection.style.display = "none";
 elements.additionalDetailsContainer.style.display = "none";
