@@ -67,7 +67,6 @@ const elements = {
   phoneInput: document.getElementById("phone"),
   postalInput: document.getElementById("postal"),
   bookingForm: document.getElementById("booking-form"),
-  setupSection: document.getElementById("setup-section"),
   bookingFormContainer: document.getElementById("booking-form-container"),
   successMessage: document.getElementById("success-message"),
   submitBtn: document.getElementById("submit-btn"),
@@ -539,7 +538,6 @@ elements.bookingForm.addEventListener("submit", async (e) => {
 });
 
 // Initialize
-elements.setupSection.style.display = "none";
 elements.bookingFormContainer.classList.add("active");
 elements.instrumentDetailsSection.style.display = "none";
 elements.serviceSection.style.display = "none";
