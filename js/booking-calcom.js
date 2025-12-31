@@ -539,7 +539,6 @@ elements.bookingForm.addEventListener("submit", async (e) => {
 });
 
 // Initialize
-// checkConfiguration();
 elements.setupSection.style.display = "none";
 elements.bookingFormContainer.classList.add("active");
 elements.instrumentDetailsSection.style.display = "none";
