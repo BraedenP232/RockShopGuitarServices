@@ -9,8 +9,8 @@ function updateLogo() {
   const isDark = theme === "dark";
 
   logo.src = isDark
-    ? "../images/RockShopLogoDark.png"
-    : "../images/RockShopLogoLight.png";
+    ? "./images/RockShopLogoDark.png"
+    : "./images/RockShopLogoLight.png";
 }
 
 // Toggle theme function
