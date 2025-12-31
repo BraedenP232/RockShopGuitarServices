@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Book Appointment - Rock Shop Guitar Services</title>
+  <meta name="description"
+    content="Book your guitar service appointment with Rock Shop. Professional setups, repairs, and maintenance." />
+  <meta name="keywords" content="guitar booking, guitar repair appointment, guitar setup booking" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/reset.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/booking.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d48198227e.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-theme="dark">
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav-fixed">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img class="header-img" src="./images/RockShopLogoDark.png" alt="Rock Shop Logo" />
+      </a>
+
+      <div class="desktop-knobs-menu">
+        <ul id="controls">
+          <li data-target="index.html#home" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Home</b>
+            </span>
+          </li>
+          <li data-target="index.html#services"
+            onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Services</b>
+            </span>
+          </li>
+          <li data-target="index.html#about" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>About</b>
+            </span>
+          </li>
+          <li data-target="booking.html" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Booking</b>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu-dropdown hidden">
+      <div class="mobile-menu-links">
+        <a href="index.html#home" class="mobile-link">Home</a>
+        <a href="index.html#services" class="mobile-link">Services</a>
+        <a href="index.html#about" class="mobile-link">About</a>
+        <a href="booking.html" class="mobile-link">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content-container">
+    <div class="booking-wrapper">
+      <div id="setup-section" class="setup-section">
+        <h2>⚙️ Cal.com Setup Required</h2>
+        <p>Before customers can book appointments, you need to configure your Cal.com integration:</p>
+
+        <ol>
+          <li>Go to <a href="https://app.cal.com/settings/developer/api-keys" target="_blank"
+              style="color: var(--accent);">Cal.com API Keys</a></li>
+          <li>Create a new API key (it will look like: <code>cal_live_xxxxxxxxxx</code>)</li>
+          <li>Go to <a href="https://app.cal.com/event-types" target="_blank" style="color: var(--accent);">Event
+              Types</a></li>
+          <li>Create an event type for "Guitar Service Booking" (30 or 60 min duration)</li>
+          <li>Copy the Event Type ID (found in the URL or event settings)</li>
+          <li>Enter both values below and click "Save Configuration"</li>
+        </ol>
+
+        <div class="config-form">
+          <div class="form-group">
+            <label for="calcom-api-key">Cal.com API Key *</label>
+            <input type="text" id="calcom-api-key" placeholder="cal_live_xxxxxxxxxx" />
+            <div class="hint">Found in: Settings → Developer → API Keys</div>
+          </div>
+
+          <div class="form-group">
+            <label for="calcom-event-id">Event Type ID *</label>
+            <input type="number" id="calcom-event-id" placeholder="123456" />
+            <div class="hint">Found in: Event Types → Your Event → Settings (or in the URL)</div>
+          </div>
+
+          <button class="btn" id="save-config-btn" onclick="saveConfig()">Save Configuration</button>
+
+          <div id="config-error" class="error-message">
+            <h3>⚠️ Configuration Error</h3>
+            <p id="config-error-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Booking Form (Hidden until configured) -->
+      <div id="booking-form-container" class="booking-form">
+        <h1 class="page-title">Book Your Appointment</h1>
+        <p class="page-subtitle">Fill out the form below and we'll get back to you within 24 hours with availability and
+          pricing confirmation.</p>
+
+        <form id="booking-form">
+          <!-- Step 1: Customer Info -->
+          <h2 class="section-title">
+            <span>Step 1: Customer Information</span>
+          </h2>
+          <div class="two-col">
+            <div>
+              <label>First Name *</label>
+              <input type="text" id="firstName" placeholder="First Name" required />
+            </div>
+            <div>
+              <label>Last Name *</label>
+              <input type="text" id="lastName" placeholder="Last Name" required />
+            </div>
+            <div>
+              <label>Email Address *</label>
+              <input type="email" id="email" placeholder="your@email.com" required />
+            </div>
+            <div>
+              <label>Phone Number *</label>
+              <input type="tel" id="phone" placeholder="(403) 555-0123" required />
+            </div>
+          </div>
+
+          <!-- Step 2: Instrument Type -->
+          <h2 class="section-title">
+            <span>Step 2: What Type of Instrument?</span>
+          </h2>
+          <div>
+            <label>Instrument Type *</label>
+            <select id="instrumentType" required>
+              <option value="">Select an Instrument</option>
+              <option value="electric">Electric Guitar</option>
+              <option value="acoustic">Acoustic Guitar</option>
+              <option value="bass">Bass Guitar</option>
+              <option value="ukulele">Ukulele</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Step 3: Instrument Details -->
+          <div id="instrumentDetailsSection">
+            <h2 class="section-title">
+              <span>Step 3: Instrument Details</span>
+            </h2>
+            <div class="two-col">
+              <div id="bridgeTypeContainer" class="field-container">
+                <label>Bridge Type *<span class="info-badge">Electric Only</span></label>
+                <select id="bridgeType" disabled>
+                  <option value="">Select Bridge Type</option>
+                  <option value="fixed">Fixed Bridge</option>
+                  <option value="strat">Strat-Style Tremolo</option>
+                  <option value="floyd">Floyd Rose / Locking</option>
+                  <option value="bigsby">Bigsby</option>
+                  <option value="other">Other</option>
+                  <option value="unknown">Not Sure</option>
+                </select>
+              </div>
+              <div id="numStringsContainer" class="field-container">
+                <label>Number of Strings *</label>
+                <select id="numStrings" required>
+                  <option value="">Choose a #</option>
+                  <option value="4">4 String</option>
+                  <option value="5">5 String</option>
+                  <option value="6">6 String</option>
+                  <option value="7">7 String</option>
+                  <option value="8">8 String</option>
+                  <option value="12">12 String</option>
+                </select>
+              </div>
+            </div>
+            <div id="brandModelContainer" class="field-container">
+              <label>Brand / Model <span style="color: var(--muted); font-weight: 400;">(Optional but
+                  helpful)</span></label>
+              <input type="text" id="brandModel" placeholder="e.g., Fender Stratocaster, Gibson Les Paul" />
+            </div>
+          </div>
+
+          <!-- Step 4: Service Selection -->
+          <div id="serviceSection">
+            <h2 class="section-title">
+              <span>Step 4: Select Services</span>
+            </h2>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" id="service-restring" value="restring" />
+                <span><strong>Restring Only</strong> - Fresh strings, cleaned fretboard</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-setup" value="setup" />
+                <span><strong>Complete Setup</strong> - Full adjustment of action, intonation, truss rod</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-nut" value="nut" />
+                <span><strong>Nut Work</strong> - Nut replacement or adjustment (starts at $80)</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-fret" value="fret" />
+                <span><strong>Fret Maintenance</strong> - Leveling, crowning, or polishing (starts at $150)</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-electronics" value="electronics" />
+                <span><strong>Electronics Work</strong> - Pickup, wiring, or control repairs (starts at $50)</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-structural" value="structural" />
+                <span><strong>Structural Repairs</strong> - Cracks, breaks, or neck issues (starts at $200)</span>
+              </label>
+              <label>
+                <input type="checkbox" id="service-other" value="other" />
+                <span><strong>Other</strong> - Describe your needs below</span>
+              </label>
+            </div>
+
+            <div id="additionalDetailsContainer" class="field-container">
+              <label>Describe the Service Needed *</label>
+              <textarea id="additionalDetails" placeholder="Please provide details about the work you need done..."
+                required></textarea>
+            </div>
+          </div>
+
+          <!-- Step 5: Scheduling -->
+          <div id="schedulingContainer">
+            <h2 class="section-title">
+              <span>Step 5: Scheduling & Delivery</span>
+            </h2>
+            <label>What days/times work best for drop-off?</label>
+            <textarea id="scheduling" placeholder="e.g., Weekday afternoons, Saturday mornings, any time, etc."
+              required></textarea>
+
+            <div class="checkbox-group" style="margin-top: 20px;">
+              <label>
+                <input type="radio" name="delivery" value="dropoff" checked />
+                <span><strong>Shop Drop-off & Pickup</strong> - I'll bring it in and pick it up</span>
+              </label>
+              <label>
+                <input type="radio" name="delivery" value="pickup" />
+                <span><strong>Pickup & Delivery Service</strong> - You pick up and return my instrument (additional
+                  fee)</span>
+              </label>
+            </div>
+
+            <p class="info-note">* Our shop address will be included in your confirmation email</p>
+
+            <div id="pickup-address" style="display: none; margin-top: 20px;">
+              <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 15px;">Pickup Address</h3>
+              <label>Street Address *</label>
+              <input type="text" id="street" placeholder="123 Main Street" />
+
+              <label style="margin-top: 1rem;">Unit / Apt <span
+                  style="color: var(--muted); font-weight: 400;">(Optional)</span></label>
+              <input type="text" id="unit" placeholder="Unit 4B" />
+
+              <div class="two-col" style="margin-top: 1rem;">
+                <div>
+                  <label>City *</label>
+                  <input type="text" id="city" placeholder="Calgary" value="Calgary" />
+                </div>
+                <div>
+                  <label>Province *</label>
+                  <input type="text" id="province" placeholder="Alberta" value="Alberta" />
+                </div>
+              </div>
+
+              <label style="margin-top: 1rem;">Postal Code *</label>
+              <input type="text" id="postal" placeholder="T2K 4S6" style="max-width: 200px;" />
+            </div>
+          </div>
+
+          <!-- Estimate Section -->
+          <div id="estimateSection">
+            <h2 class="section-title">Price Breakdown</h2>
+            <div class="price-breakdown" id="priceBreakdown">
+              <div class="price-item">
+                <span>Select services above to see pricing</span>
+                <span>—</span>
+              </div>
+            </div>
+
+            <h2 class="section-title">Estimated Total</h2>
+            <div class="estimate-box" id="estimate">$0.00</div>
+            <p class="info-note">* Final price will be confirmed after instrument inspection</p>
+
+            <button type="submit" class="submit-btn" id="submit-btn">Submit Booking Request</button>
+
+            <div id="loading" class="loading">
+              <div class="spinner"></div>
+              <p>Creating your booking...</p>
+            </div>
+
+            <div id="booking-error" class="error-message">
+              <h3>⚠️ Booking Error</h3>
+              <p id="booking-error-text"></p>
+            </div>
+          </div>
+        </form>
+
+        <!-- Success Message -->
+        <div id="success-message" class="success-message">
+          <h2>✅ Booking Request Submitted!</h2>
+          <p>Thank you! We've received your booking request.</p>
+          <p>You should receive a confirmation email shortly with:</p>
+          <ul style="text-align: left; max-width: 500px; margin: 20px auto; line-height: 2;">
+            <li>Your appointment details</li>
+            <li>Calendar invitation</li>
+            <li>Our shop address and contact info</li>
+          </ul>
+          <p style="margin-top: 30px;">We'll see you soon!</p>
+          <button class="btn" onclick="location.reload()" style="margin-top: 20px;">Book Another Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-bg footer-accent">
+    <div class="footer-container">
+      <a href="#top" class="footer-logo">Rock Shop</a>
+      <p class="footer-subtitle">Professional Guitar Service & Repair</p>
+
+      <ul class="footer-links">
+        <li><a href="index.html#home" class="footer-link">Home</a></li>
+        <li><a href="index.html#services" class="footer-link">Services</a></li>
+        <li><a href="index.html#about" class="footer-link">About</a></li>
+        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+        <li><a href="booking.html" class="footer-link">Booking</a></li>
+      </ul>
+
+      <div class="social-icons">
+        <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+        <!-- <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> -->
+        <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+      </div>
+
+      <p class="footer-copyright">© 2025 Rock Shop Guitar Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/booking-calcom.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

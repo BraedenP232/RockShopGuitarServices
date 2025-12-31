@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Rock Shop Guitar Services - Professional Guitar Repair & Setup</title>
+  <meta name="description"
+    content="A short, compelling description of your webpage for search engines. Ideally 50–160 characters." />
+  <meta name="keywords"
+    content="guitar, tune, tuning, instrument, professional, music, music theory, guitar theory, guitar lessons, guitar tips, six string, electric, acoustic, ukulele, bass" />
+  <meta name="author" content="Braeden Pelletier" />
+
+  <!-- Open Graph (Facebook, Discord, LinkedIn) -->
+  <meta property="og:title" content="The Rockshop" />
+  <meta property="og:description" content="Description of your page shown in social preview." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta property="og:image" content="https://yourwebsite.com/preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="./css/reset.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/d48198227e.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="home" data-theme="dark">
+  <!-- Navigation -->
+  <nav id="main-nav" class="nav-fixed">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo-link">
+        <img class="header-img" src="./images/RockShopLogoLight.png" alt="Rock Shop Logo" />
+      </a>
+
+      <!-- Theme Toggle -->
+      <!-- <div class="theme-toggle">
+        <input checked="checked" type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <span class="ball"></span>
+        </label>
+      </div> -->
+
+      <!-- Desktop Knobs Menu -->
+      <div class="desktop-knobs-menu">
+        <ul id="controls">
+          <li data-target="index.html#home" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Home</b>
+            </span>
+          </li>
+          <li data-target="index.html#services"
+            onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Services</b>
+            </span>
+          </li>
+          <li data-target="index.html#about" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>About</b>
+            </span>
+          </li>
+          <li data-target="booking.html" onclick="window.location.href = this.getAttribute('data-target');">
+            <i class="num num-1">1</i>
+            <i class="num num-2">2</i>
+            <i class="num num-3">3</i>
+            <i class="num num-4">4</i>
+            <i class="num num-5">5</i>
+            <i class="num num-6">6</i>
+            <i class="num num-7">7</i>
+            <i class="num num-8">8</i>
+            <i class="num num-9">9</i>
+            <i class="num num-10">10</i>
+            <i class="num num-11">11</i>
+            <span>
+              <div class="spark">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
+              <b>Booking</b>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <button class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <svg class="hamburger" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <!-- Stylized Guitar (drawn first, so it's in back) -->
+    <g class="guitar-icon">
+      <!-- Neck -->
+      <rect x="11.25" y="2" width="1.5" height="9" fill="currentColor" rx="0.75" />
+      
+      <!-- Details that fade in after morph -->
+      <g class="guitar-details">
+        <!-- Frets -->
+        <line x1="10.5" y1="4" x2="13.5" y2="4" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+        <line x1="10.5" y1="6.5" x2="13.5" y2="6.5" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+        <line x1="10.5" y1="9" x2="13.5" y2="9" stroke="currentColor" stroke-width="0.5" opacity="0.4" />
+      </g>
+      
+      <!-- Headstock -->
+      <path d="M10.5 2 L10.5 0.5 L13.5 0.5 L13.5 2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" />
+      
+      <g class="guitar-details">
+        <!-- Tuning pegs -->
+        <circle cx="10.5" cy="1.2" r="0.6" fill="currentColor" />
+        <circle cx="13.5" cy="1.2" r="0.6" fill="currentColor" />
+      </g>
+      
+      <!-- Body -->
+      <ellipse cx="12" cy="13" rx="4.5" ry="3.5" fill="currentColor" opacity="0.9" />
+      <ellipse cx="12" cy="18" rx="5.5" ry="4.5" fill="currentColor" />
+      
+      <!-- Sound hole -->
+      <circle cx="12" cy="17" r="1.8" stroke="currentColor" stroke-width="1.2" fill="none" opacity="0.3" />
+      
+      <!-- Bridge -->
+      <rect x="10" y="21" width="4" height="1" fill="currentColor" rx="0.5" />
+      
+      <g class="guitar-details">
+        <!-- Strings -->
+        <line x1="10.5" y1="2" x2="10.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+        <line x1="11.5" y1="2" x2="11.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+        <line x1="12.5" y1="2" x2="12.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+        <line x1="13.5" y1="2" x2="13.5" y2="21.5" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+      </g>
+    </g>
+
+    <!-- Hamburger lines (drawn last, so they're on top) -->
+    <path class="ham-line ham-top" d="M4 6h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    <path class="ham-line ham-middle" d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    <path class="ham-line ham-bottom" d="M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+  </svg>
+</button>
+    </div>
+
+    <!-- Backdrop -->
+    <div id="menu-backdrop" class="menu-backdrop"></div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="mobile-menu-dropdown">
+      <div class="mobile-menu-links">
+        <a href="index.html#home" class="mobile-link">Home</a>
+        <a href="index.html#services" class="mobile-link">Services</a>
+        <a href="index.html#about" class="mobile-link">About</a>
+        <a href="booking.html" class="mobile-link">Booking</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-gradient hero-section">
+    <h1 class="hero-title">
+      Professional Guitar <br />
+      <span class="hero-highlight">Service & Repair</span>
+    </h1>
+    <p class="hero-subtitle">
+      Fender Certified Guitar Technician with 20+ years of experience.
+      Professional setups, restringing, and guitar care in Calgary, Alberta and surrounding areas.
+    </p>
+    <div class="hero-buttons">
+      <a href="#services" class="btn-primary-lg">View Services</a>
+      <a id="services" href="booking.html" class="btn-outline-lg">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="content-container">
+      <div class="text-center section-spacing">
+        <h2 class="section-title">Services</h2>
+        <p class="section-subtitle">
+          Comprehensive guitar services to keep your instrument in perfect condition.
+        </p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <h3 class="card-title">Setup & Maintenance</h3>
+          <p class="card-text">Action, intonation, and neck adjustments.</p>
+          <ul class="card-list">
+            <li>• Action adjustment</li>
+            <li>• Intonation setup</li>
+            <li>• Neck relief adjustment</li>
+            <li>• Pickup height optimization</li>
+          </ul>
+          <div class="card-price">$75</div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="card-title">Fret Work</h3>
+          <p class="card-text">Leveling, crowning, and polishing.</p>
+          <ul class="card-list">
+            <li>• Fret leveling</li>
+            <li>• Fret crowning</li>
+            <li>• Fret polishing</li>
+            <li>• Fret replacement</li>
+          </ul>
+          <div class="card-price">$150+</div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="card-title">Electronics</h3>
+          <p class="card-text">Pickup installs, wiring, and upgrades.</p>
+          <ul class="card-list">
+            <li>• Pickup installation</li>
+            <li>• Wiring repairs</li>
+            <li>• Pot & switch replacement</li>
+            <li>• Custom wiring</li>
+          </ul>
+          <div class="card-price">$50+</div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="card-title">Nut & Bridge Work</h3>
+          <p class="card-text">Nut replacement and saddle work.</p>
+          <ul class="card-list">
+            <li>• Nut replacement</li>
+            <li>• Bridge pin fitting</li>
+            <li>• Saddle replacement</li>
+            <li>• Bridge repair</li>
+          </ul>
+          <div class="card-price">$80+</div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="card-title">Structural Repairs</h3>
+          <p class="card-text">Cracks, neck resets, and major fixes.</p>
+          <ul class="card-list">
+            <li>• Crack repairs</li>
+            <li>• Neck resets</li>
+            <li>• Brace repairs</li>
+            <li>• Binding repairs</li>
+          </ul>
+          <div class="card-price">$200+</div>
+        </div>
+
+        <div class="service-card">
+          <h3 class="card-title">Restoration</h3>
+          <p class="card-text">Full refinishing and vintage restoration.</p>
+          <ul class="card-list">
+            <li>• Complete refinishing</li>
+            <li>• Hardware replacement</li>
+            <li>• Vintage restoration</li>
+            <li>• Custom mods</li>
+          </ul>
+          <div id="about" class="card-price">Quote</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="content-container about-grid">
+
+      <div>
+        <h2 class="section-title text-black">About Rock Shop</h2>
+        <p class="section-text">
+          With 15+ years as a professional guitar technician, we've worked on
+          everything from vintage acoustics to modern electrics.
+        </p>
+        <p class="section-text margin-bottom">
+          Every guitar has a unique voice. Our goal is to make it sing clearly –
+          whether through a simple setup or full restoration.
+        </p>
+        <div class="stats-grid">
+          <div class="text-center">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Guitars Serviced</div>
+          </div>
+          <div class="text-center">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-choose-card">
+        <h3 class="card-title text-black">Why Choose Rock Shop?</h3>
+        <ul class="why-choose-list">
+          <li><span class="check">✓</span>15+ years experience</li>
+          <li><span class="check">✓</span>Acoustic & electric expertise</li>
+          <li><span class="check">✓</span>Quick turnaround times</li>
+          <li><span class="check">✓</span>Competitive pricing</li>
+          <li id="contact"><span class="check">✓</span>Satisfaction guaranteed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="content-container">
+      <div class="text-center section-spacing">
+        <h2 class="section-title text-black">Get In Touch</h2>
+        <p class="section-subtitle text-gray-dark">
+          Ready to give your guitar the care it deserves? Contact us for a quote.
+        </p>
+      </div>
+      <div class="contact-grid">
+
+        <div>
+          <h3 class="card-title text-black margin-bottom">Contact Information</h3>
+          <div class="contact-info-list">
+            <div class="contact-item"><span class="text-red mr-4"></span> (555) 123-4567</div>
+            <div class="contact-item"><span class="text-red mr-4"></span> info@rockshopguitar.com</div>
+            <div class="contact-item"><span class="text-red mr-4"></span> 123 Music Street, Nashville, TN</div>
+            <div class="contact-item"><span class="text-red mr-4"></span> Mon-Fri: 9-6, Sat: 10-4</div>
+          </div>
+        </div>
+
+        <div class="quote-form-card">
+          <h3 class="card-title text-black margin-bottom">Request a Quote</h3>
+          <div>&nbsp;</div>
+          <button type="button" onclick="window.location.href='booking.html'" class="btn-primary-lg w-full">Book
+            Appointment</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bg footer-accent">
+    <div class="footer-container">
+      <a href="#top" class="footer-logo">Rock Shop</a>
+      <p class="footer-subtitle">Professional Guitar Service & Repair</p>
+
+      <ul class="footer-links">
+        <li><a href="index.html#home" class="footer-link">Home</a></li>
+        <li><a href="index.html#services" class="footer-link">Services</a></li>
+        <li><a href="index.html#about" class="footer-link">About</a></li>
+        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+        <li><a href="booking.html" class="footer-link">Booking</a></li>
+      </ul>
+
+      <div class="social-icons">
+        <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+        <!-- <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> -->
+        <!-- <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a> -->
+      </div>
+
+      <p class="footer-copyright">© 2025 Rock Shop Guitar Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

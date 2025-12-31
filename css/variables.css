@@ -1,0 +1,48 @@
+/* CSS Variables */
+:root {
+  --brand-red: #ba181b;
+  --brand-red-dark: #a4161a;
+  --brand-black: #201d20;
+  --brand-gray-dark: #2d2a2d;
+  --brand-gray: #3a373a;
+  --brand-gray-mid: #b1a7a6;
+  --brand-gray-light: #d3d3d3;
+  --white: #ffffff;
+  --text-light: #f0f0f0;
+  --bg-light: #f9f9f9;
+
+  --font-main: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-display: "Anton", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+  /* Light theme defaults */
+  --bg: var(--brand-gray-light);
+  --surface: var(--white);
+  --text: var(--brand-gray);
+  --muted: var(--brand-gray-mid);
+  --border: #e6e6e6;
+  --accent: var(--brand-red);
+  --accent-strong: var(--brand-red-dark);
+  --shadow: 0 6px 18px rgba(26, 24, 26, 0.08);
+  --radius: 8px;
+  --gap: 1rem;
+  /* Nav sizing */
+  --nav-height: 150px;
+  /* Card & section variables */
+  --card-bg: var(--white);
+  --card-text: var(--brand-gray);
+  --about-text: var(--brand-gray);
+}
+
+/* Dark Mode */
+body[data-theme="dark"] {
+  --bg: var(--brand-gray-dark);
+  --surface: var(--brand-gray);
+  --text: var(--brand-gray-light);
+  --muted: var(--text-light);
+  --border: rgba(255, 255, 255, 0.06);
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  /* Dark-mode card tweaks */
+  --card-bg: rgba(255,255,255,0.03);
+  --card-text: var(--text);
+  --about-text: var(--text);
+}
